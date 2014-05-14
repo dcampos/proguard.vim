@@ -11,6 +11,8 @@ endif
 syn region proguardComment start=/#/ end=/$/
 syn match proguardDirective "-keep[a-z,]*\>"
 syn match proguardDirective "-optimizations\>"
+syn match proguardDirective "-dont[a-z,]*\>"
+syn match proguardDirective "^\s*-[a-z,]*\>"
 syn match proguardWildcard "\*"
 syn match proguardMembers "<\(fields\|methods\)>"
 
